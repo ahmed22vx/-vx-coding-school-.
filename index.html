@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة VX لتعليم البرمجة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-screen" class="overlay">
+        <div class="overlay-content">
+            <h2>أكاديمية "VX" لتعليم البرمجة ترحب بك</h2>
+            <button id="next-button" class="cta-button">التالي</button>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">عن الشركة</a></li>
+                <li><a href="#courses">الدورات</a></li>
+                <li><a href="#reviews" id="reviews-link">آراء الطلاب</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <h1 class="animated-title">VX لتعليم البرمجة</h1>
+        <button class="cta-button" id="start-button">ابدأ الآن</button>
+    </header>
+    <section id="about">
+        <h2>مقدمة عن الشركة</h2>
+        <p>نحن في شركة VX، بقيادة أحمد فوزي، نهدف إلى تقديم أفضل تجارب تعلم البرمجة من الصفر إلى الاحتراف، باستخدام أحدث الأساليب التعليمية.</p>
+    </section>
+    <section id="courses">
+        <h2>الدورات المتاحة</h2>
+        <div class="course">
+            <h3>تعلم البرمجة من الصفر</h3>
+            <p>دورة شاملة للمبتدئين تعلمك أساسيات البرمجة خطوة بخطوة.</p>
+            <button class="course-btn">التسجيل الآن</button>
+        </div>
+    </section>
+    <section id="reviews" style="display:none;">
+        <h2>آراء الطلاب</h2>
+        <div class="review">
+            <p>"الدورة كانت رائعة! تعلمت الكثير في وقت قصير جدًا."</p>
+            <p>- أحمد</p>
+        </div>
+        <div class="review">
+            <p>"أسلوب التدريس كان ممتاز والمدربون كانوا متعاونين جدًا."</p>
+            <p>- سارة</p>
+        </div>
+        <div class="review">
+            <p>"أفضل قرار اتخذته هو التسجيل في دورة VX. الآن أنا قادر على تطوير برمجيات بنفسي!"</p>
+            <p>- محمد</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>للتواصل معنا، يمكنك الاتصال على الأرقام التالية:</p>
+        <ul>
+            <li>01557362941</li>
+            <li>01280456126</li>
+        </ul>
+    </section>
+    <footer>
+        <p>© 2024 شركة VX لتعليم البرمجة. جميع الحقوق محفوظة.</p>
+    </footer>
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>اترك رقمك وسوف نتواصل معك. شكرًا لك.</h2>
+            <form id="registration-form">
+                <label for="phone">رقم الهاتف:</label>
+                <input type="text" id="phone" name="phone" required>
+                <button type="submit" class="submit-btn">تسجيل</button>
+            </form>
+            <p id="confirmation-message" style="display: none;">تم التسجيل بنجاح! أهلاً بك في عائلتنا 😊</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
